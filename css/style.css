@@ -1,0 +1,350 @@
+/***** =================================================
+										Global Styles
+ ================================================= *****/
+
+* { 
+  box-sizing: border-box;
+}
+
+* {
+min-height: 0;
+min-width: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table; 
+  clear: both; 
+}
+
+html {
+	background-color: #fafafa;
+}
+
+#wrapper {
+	margin: 0 auto;
+}
+
+body {
+	text-align: center;
+	color: #949494;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, footer {
+	color: #4a4a4a;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: 700;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: 800;
+}
+
+h3 {
+	font-size: 1.4em;
+	color: #4a4a4a;
+}
+
+p, img {
+	padding-bottom: 1em;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #4a4a4a;
+	font-weight: bold;
+}
+
+.row {
+			width: 90%;
+			margin: 0 auto;
+			max-width: 1150px;
+}
+
+/* ===========
+ Header
+============== */
+
+.main-nav li {
+	
+	margin-top: .5em;
+	background-color: #fff;
+	list-style: none;
+	
+}
+
+.main-nav li a {
+	font-size: 1.2em;
+	font-weight: 700;
+	text-align: center;
+	display: block;
+	padding: 1em 0 1em 2em;
+	text-transform: uppercase;
+}
+
+/* ===========
+ Footer
+============== */
+
+footer {
+	border-top: 1px solid #DEDEDE;
+	font-size: 1.1em;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+footer h4 {
+	display: block;
+	float: left;
+}
+
+.back-to-top {
+	display: block;
+	float: right;
+}
+
+.secondary-nav {
+	display: none;
+}
+
+/* ===========
+ Home
+============== */
+
+#home {
+	padding-bottom: 1.5em;
+	color: #ADADAD;
+}
+
+.img-container {
+	padding: 0.8em 1.5em;
+	margin: 2em 2.5em;
+	background-color: #ededed;
+}
+.img-container img {
+	border-radius: 50%;
+	max-width: 60%;
+}
+
+/* ===========
+ Portfolio
+============== */
+
+#portfolio {
+	padding-bottom: 2em;
+	background-color: #fff;
+}
+
+#portfolio h2 {
+	padding-top: 3em;
+	padding-bottom: 2em;
+}
+.portfolio {
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+}
+
+.portfolio-item {
+	flex: 1 330px;
+	-webkit-flex: 1 330px;
+	-moz-flex: 1 330px;
+	margin: 5px;
+}
+
+/* ===========
+ Contact
+============== */
+
+#contact {
+	padding-bottom: 2em;
+	color: #ADADAD;
+}
+
+#contact a {
+	color: #a5a5a5;
+}
+
+#contact h2 {
+	padding-top: 3em;
+	padding-bottom: 1em;
+}
+
+p.phone {
+	padding-bottom: 0.3em;
+}
+
+
+/***** =================================================
+										Tablet Styles
+ ================================================= *****/
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav {
+		display: flex;
+		display: -webkit-flex;
+		display: -moz-flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		align-items: center;
+		-webkit-align-items: center;
+		-moz-align-items: center;
+	}
+
+	.main-nav li {
+		background-color: #fafafa;
+	}
+
+	/* ==== Home ==== */
+	.about-me {
+		display: block;
+		float: left;
+		max-width: 60%;
+		text-align: left;
+		padding-right: 1em;
+	}
+
+	.img-container {
+		display: block;
+		float: right;
+		max-width: 40%;
+		margin: 0;
+	}
+
+	/* ==== Portfolio ==== */
+	.portfolio-item {
+		flex: 1 294px;
+		-webkit-flex: 1 294px;
+		-moz-flex: 1 294px;
+		margin: 5px;
+	}
+
+	/* ==== Contact ==== */
+	.contact-width {
+		width: 70%;
+	}
+
+	/* ==== Footer ==== */
+	footer {
+		font-size: 1em;
+		display: flex;
+		display: -webkit-flex;
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		justify-content: space-between;
+		-webkit-justify-content: space-between;
+	}
+
+	footer h4,
+	ul.secondary-nav {
+		margin-top: 1em;
+	}
+
+	.back-to-top {
+		display: none;
+	}
+
+	.secondary-nav {
+		display: flex;
+		display: -webkit-flex;
+	}
+
+	.secondary-nav li {
+		list-style: none;
+	}
+
+	.secondary-nav li a {
+		font-size: 0.9em;
+		color: #4a4a4a;
+		font-weight: bold;
+		text-align: center;
+		display: block;
+    padding: 0 0 0 2em;
+		text-transform: uppercase;
+		line-height: 1.5em;
+	}
+}
+
+/***** =================================================
+									Desktop Styles
+================================================= *****/
+@media (min-width: 1025px) {
+
+	#wrapper {
+		width: 90%;
+		max-width: 1080px;
+	}
+	.main-header {
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		justify-content: space-between;
+		-webkit-justify-content: space-between;
+	}
+
+	/* ==== Portfolio ==== */
+	.portfolio-item {
+		flex: 1 260px;
+		-webkit-flex: 1 260spx;
+		-moz-flex: 1 260spx;
+		margin: 5px;
+	}
+
+	/* ==== Contact ==== */
+	.contact-width {
+		width: 55%;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
